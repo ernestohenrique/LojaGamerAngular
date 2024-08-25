@@ -1,0 +1,153 @@
+{
+      "id": "609321920701",
+      "produto": "Jogo 6",
+      "descricao": "Descrição do Jogo 6",
+      "foto": "jogo2.PNG",
+      "preco": "1000"
+    },
+    {
+      "id": "289151304213",
+      "produto": "Jogo 7",
+      "descricao": "Descrição do Jogo 5",
+      "foto": "jogo1.PNG",
+      "preco": "3000"
+    },
+    {
+      "id": "1124166507385",
+      "produto": "Jogo 5",
+      "descricao": "Descrição do Jogo 5",
+      "foto": "jogo1.PNG",
+      "preco": "3000"
+    },
+    {
+      "id": "1124166507200",
+      "produto": "Jogo 8",
+      "descricao": "Descrição do Jogo 8",
+      "foto": "jogo1.PNG",
+      "preco": "3000"
+    }
+
+
+/* Reseta as margens e preenchimento*/
+* {
+  margin: 0px;
+  padding: 0px;
+  /*box-sizing: border-box;*/
+}
+
+/* Garante que o body e html ocupem a altura total */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#sec-banner {
+  padding: 10px 0px;
+}
+
+#sec-banner img {
+  height: 500px;
+  object-fit: cover; /* Mantém a proporção da imagem */
+  width: 100%;
+}
+
+.sec-titulo {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sec-card {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cartões se movam para a linha seguinte */
+  gap: 1.5rem; /* Espaçamento entre cartões */
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem; /* Adiciona margem inferior a cada coluna */
+}
+
+.card {
+  width: 100%; /* Ajusta o card para ocupar toda a largura da coluna */
+  max-width: 350px; /* Define um tamanho máximo para o card */
+  margin: 0 auto; /* Centraliza o cartão dentro da coluna */
+  overflow: hidden; /* Garante que o conteúdo não vaze */
+}
+
+.card-spacing {
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.card-body {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.card-footer {
+  padding: 5px;
+}
+
+/* Aumentar o tamanho do botão */
+.btn {
+  padding: 0.15rem 1rem; /* Ajusta o preenchimento do botão */
+  font-size: 1.25rem; /* Ajusta o tamanho da fonte do botão */
+  border-radius: 0.5rem; /* Ajusta o raio das bordas do botão */
+}
+
+@media (max-width: 400px) {
+  #sec-banner img {
+    height: auto;
+  }
+
+  .card {
+    width: 250px;
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover; /* Mantém a proporção da imagem */
+  }
+
+  .sec-titulo {
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 0.1rem 0.5rem; /* Ajusta o preenchimento do botão */
+    font-size: 1rem; /* Ajusta o tamanho da fonte do botão */
+    border-radius: 0.5rem; /* Ajusta o raio das bordas do botão */
+  }
+}
+
+@media (max-width: 700px) {
+  #sec-banner img {
+    height: auto;
+  }
+
+  .card {
+    width: 250px;
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover; /* Mantém a proporção da imagem */
+  }
+}

@@ -1,0 +1,85 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-title">Cadastrar Produto</h4>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="modal.dismiss('Cross click')"
+  ></button>
+</div>
+
+<div class="modal-body">
+  <div class="formulario">
+    <form class="form" (ngSubmit)="cadastrar()" [formGroup]="formCadastro">
+      <!-- Nome do Produto -->
+      <div class="mb-3">
+        <label class="form-label" for="produto">Nome do Produto</label>
+        <input
+          type="text"
+          id="produto"
+          formControlName="produto"
+          class="form-control"
+        />
+        <div
+          *ngIf="submetido && formCadastro.controls['produto'].invalid"
+          class="text-danger"
+        >
+          O nome do produto é obrigatório.
+        </div>
+      </div>
+
+      <!-- Descrição do Produto -->
+      <div class="mb-3">
+        <label class="form-label" for="descricao">Descrição do Produto</label>
+        <input
+          type="text"
+          id="descricao"
+          formControlName="descricao"
+          class="form-control"
+        />
+        <div
+          *ngIf="submetido && formCadastro.controls['descricao'].invalid"
+          class="text-danger"
+        >
+          A descrição do produto é obrigatória.
+        </div>
+      </div>
+
+      <!-- Imagem do Produto -->
+      <div class="mb-3">
+        <label class="form-label" for="foto">Imagem do Produto</label>
+        <input
+          type="text"
+          id="foto"
+          formControlName="foto"
+          class="form-control"
+        />
+        <div
+          *ngIf="submetido && formCadastro.controls['foto'].invalid"
+          class="text-danger"
+        >
+          A URL da foto é obrigatória.
+        </div>
+      </div>
+
+      <!-- Preço do Produto -->
+      <div class="mb-3">
+        <label class="form-label" for="preco">Preço do Produto</label>
+        <input
+          type="text"
+          id="preco"
+          formControlName="preco"
+          class="form-control"
+        />
+        <div
+          *ngIf="submetido && formCadastro.controls['preco'].invalid"
+          class="text-danger"
+        >
+          O preço é obrigatório e deve estar no formato correto.
+        </div>
+      </div>
+
+      <button type="submit" class="botao-form">Cadastrar</button>
+    </form>
+  </div>
+</div>

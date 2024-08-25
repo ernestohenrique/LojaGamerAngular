@@ -1,0 +1,78 @@
+<div class="modal-header">
+  <h4 class="modal-title">Editar Produto</h4>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="modal.dismiss()"
+  ></button>
+</div>
+
+<div class="modal-body">
+  <form class="form" (ngSubmit)="editar()" [formGroup]="formEditar">
+    <div class="mb-3">
+      <label for="produto" class="form-label">Nome do Produto</label>
+      <input
+        type="text"
+        id="produto"
+        class="form-control"
+        formControlName="produto"
+      />
+      <div
+        *ngIf="submetido && formEditar.get('produto')?.invalid"
+        class="text-danger"
+      >
+        Nome do produto é obrigatório.
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="descricao" class="form-label">Descrição</label>
+      <input
+        type="text"
+        id="descricao"
+        class="form-control"
+        formControlName="descricao"
+      />
+      <div
+        *ngIf="submetido && formEditar.get('descricao')?.invalid"
+        class="text-danger"
+      >
+        Descrição é obrigatória.
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="foto" class="form-label">URL da Imagem</label>
+      <input
+        type="text"
+        id="foto"
+        class="form-control"
+        formControlName="foto"
+      />
+      <div
+        *ngIf="submetido && formEditar.get('foto')?.invalid"
+        class="text-danger"
+      >
+        A URL da imagem é obrigatória.
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="preco" class="form-label">Preço</label>
+      <input
+        type="text"
+        id="preco"
+        class="form-control"
+        formControlName="preco"
+      />
+      <div
+        *ngIf="submetido && formEditar.get('preco')?.invalid"
+        class="text-danger"
+      >
+        Preço inválido. Deve ser um número no formato 0.00.
+      </div>
+    </div>
+    <button type="submit" class="botao-form">Salvar</button>
+  </form>
+</div>

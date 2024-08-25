@@ -1,0 +1,61 @@
+{
+  "usuario": [
+    {
+      "id": "764948743889",
+      "nome": "Ernesto",
+      "email": "ernestohnm@gmail.com",
+      "senha": "Ernesto72@"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "1508963656461",
+      "produto": "Jogo 1",
+      "descricao": "Descrição do Jogo 1",
+      "foto": "jogo1.PNG",
+      "preco": "2000"
+    },
+    {
+      "id": "212724085744",
+      "produto": "Jogo 2",
+      "descricao": "Descrição do Jogo 2",
+      "foto": "jogo2.PNG",
+      "preco": "1000"
+    },
+    {
+      "id": "1034139599397",
+      "produto": "Jogo 3",
+      "descricao": "Descrição do Jogo 3",
+      "foto": "jogo3.PNG",
+      "preco": "3000"
+    },
+    {
+      "id": "782513678385",
+      "produto": "Jogo 4",
+      "descricao": "Descrição do Jogo 4",
+      "foto": "jogo1.PNG",
+      "preco": "4000"
+    },
+    {
+      "id": "1004808124635",
+      "produto": "Jogo 5",
+      "descricao": "Descrição do Jogo 5",
+      "foto": "jogo2.PNG",
+      "preco": "5000"
+    },
+    {
+      "id": "602007578583",
+      "produto": "Jogo 6",
+      "descricao": "Descrição do Jogo 6",
+      "foto": "jogo3.PNG",
+      "preco": "6000"
+    },
+    {
+      "id": "560735383249",
+      "produto": "Jogo 7",
+      "descricao": "Descrição do Jogo 7",
+      "foto": "jogo1.PNG",
+      "preco": "7000"
+    }
+  ]
+}
